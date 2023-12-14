@@ -5,21 +5,21 @@
 class Mmedusa < Formula
   desc "A tool for managing and deduplicating media files."
   homepage "https://github.com/yuriykuntsyak/mmedusa"
-  version "0.0.15"
+  version "0.0.16"
   license "Apache 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yuriykuntsyak/mmedusa/releases/download/v0.0.15/mmedusa_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "08f690ed05c6aa4f1df766b3e7794fbfdcd63e158ca605cd47278dad44ea2c64"
+      url "https://github.com/yuriykuntsyak/mmedusa/releases/download/v0.0.16/mmedusa_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "db2aa760ec474fd3337baa9a6f49ab8549437c8f8a31fcbc2f5248649e9f0307"
 
       def install
         bin.install "mmedusa"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yuriykuntsyak/mmedusa/releases/download/v0.0.15/mmedusa_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "46b17c09b4d587b29ec915233675be908f22932e6ade2032de8d54db2b6786a9"
+      url "https://github.com/yuriykuntsyak/mmedusa/releases/download/v0.0.16/mmedusa_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "234d22e7429cb35efc1ab2d9e9483f5539a3d81c5a1cff4a86422defd50e2102"
 
       def install
         bin.install "mmedusa"
@@ -29,16 +29,16 @@ class Mmedusa < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yuriykuntsyak/mmedusa/releases/download/v0.0.15/mmedusa_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "d618df3d30bb990bc94835f67dc4c9351c0b50b4abb0a618af8a672c13317b18"
+      url "https://github.com/yuriykuntsyak/mmedusa/releases/download/v0.0.16/mmedusa_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "1037e0a23c197bba28b78fcc25e5e608db84045f2a3545c8f0e1a3b7fd06c703"
 
       def install
         bin.install "mmedusa"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yuriykuntsyak/mmedusa/releases/download/v0.0.15/mmedusa_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "eb81acc6510fb66ce88c1b26cae268d724ce5bdf22ca542f1fdfb857620548df"
+      url "https://github.com/yuriykuntsyak/mmedusa/releases/download/v0.0.16/mmedusa_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "c8278b811338f9324fe6706ed3bbe1efab157d88571d7af0d91255a50b3dfbbe"
 
       def install
         bin.install "mmedusa"
